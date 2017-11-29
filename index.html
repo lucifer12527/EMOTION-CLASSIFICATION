@@ -127,7 +127,7 @@
 							<img src="Pictures/zerocrossing.png" alt="This text displays when the image is umavailable" width="" height=""/><br>
 							<B><u>2) Pitch:</u></B><br> &nbsp; The pitch is the distinctive quality of a sound, dependent primarily on the frequency of the sound waves produced by its source, which can be computed by the pitch detection algorithm (PDA). High Pitch often refres to highe frequency oscillated signals and low pitch refers to low frequency oscillated ones.<br><br>
 							<B><u>3) Cepstrum:</u></B><br> &nbsp;A cepstrum is the result of taking the inverse Fourier transform (IFT) of the logarithm of the estimated spectrum of a signal.<img src="Pictures/cepstrum.png" alt="This text displays when the image is umavailable" width="" height=""/><br><br>
-							<B><u>4) Entropy:</u></B><br> &nbsp; Weiner Entropy measure of Spectral flatness or tonality coefficient is used to characterise audio spectrum. Spectral flatness provides a way to quantify how noise-like a sound is, as opposed to being tone-like.To extrac entropy feature speech is first pre-emphasized using a pre-emphasis filter in order to spectrally flatten the signal, and then the pre-emphasized speech is separated into short segments called frames. This will significantly enhance the ability to identify the emotional aspects of speech. In order to reduce the familiar edge effects, Hamming window is applied to each frame. <br>The FFT of X(i,n) is given by<img src="Pictures/entropy.png" alt="This text displays when the image is umavailable" width="" height=""/>Where X(i,n) is the nth frame and the ith frequency component. M denotes the number of points in the FFT and x(m,n) is the nth frame in the mth sample<br><br>
+							<B><u>4) Entropy:</u></B><br> &nbsp; Weiner Entropy measure of Spectral flatness or tonality coefficient is used to characterise audio spectrum. Spectral flatness provides a way to quantify how noise-like a sound is, as opposed to being tone-like.To extrac entropy feature speech is first pre-emphasized using a pre-emphasis filter in order to spectrally flatten the signal, and then the pre-emphasized speech is separated into short segments called frames. This will significantly enhance the ability to identify the emotional aspects of speech. In order to reduce the familiar edge effects, Hamming window is applied to each frame.<br><br>
 							<B><u>5) Spectral Centroid:</u></B><br> &nbsp; The spectral centroid is used to characterise a spectrum. It indicates where the "center of mass" (around what frequency most of the spectrum is presnt). Perceptually, it has a robust connection with the impression of "brightness" of a sound.This feature is similar to formant frequencies and provides complementary information to cepstral features and also robust to noise. In short this would give us an idea to what frequency ange most of the power of the spectrum would lie in.&nbsp;<img src="Pictures/spectralcentroid.png" alt="This text displays when the image is umavailable" width="" height=""/>X(k) represents weighted frequency values or magnitude of bin k and F(k) represents central frequency of that bin.<br><br>
 							
 							<B><u>6) Spectral Energy Distribution:</u></B><br> &nbsp;Spectral energy distribution is a plot of brightness or flux density versus frequency or wavelength of light.<br><br>
@@ -151,7 +151,7 @@ An audio signal is constantly changing, so to simply things we assume that on sh
  &nbsp;
 After that we calculate the power spectrum of each frame. Periodogram estimate identify which frequencies are present in the frame. Periodogram spectral estimate still contains a lot of information not required for Speech recognition. For this reason, we take clumps of periodogram bins and sum them up to get an idea of how much energy exists in various frequency regions. This is performed by our Mel filterbank. Mel Scale tells us exactly how to space our filterbanks and how wide to make them.<br>
  &nbsp;
-Once we have the filterbank energies, we take the logarithm of them. The final step is to compute the DCT of the log filterbank energies. There are two main reasons this is performed. Cos our filterbank are all overlappin, the filterbank energies are quite correlated with each other. The DCT de-correlates the energies which means diagonal co-variance matrices can be used to model the features in a classifier. But only 12 of the 26 DCT coefficients are kept.<br>
+Once we have the filterbank energies, we take the logarithm of them. The final step is to compute the DCT of the log filterbank energies. There are two main reasons this is performed. Beacuse our filterbank are all overlapping, the filterbank energies are quite correlated with each other. The DCT de-correlates the energies which means diagonal co-variance matrices can be used to model the features in a classifier. But only 12 of the 26 DCT coefficients are kept.<br>
 <br>
 <u>Calculations</u>
 <br>
@@ -200,7 +200,7 @@ This is called the periodogram estimate of the power spectrum.
 						2D and 3D plot are shown for better understanding and visualization of features. 2D plots contains one features on x-axis and other on y-axis. The two emotion are plotted on the same graph to see the correlation between them.
 						<img src="Pictures/discussion.png" alt="This text displays when the image is umavailable" width="" height=""/>
 						
-					&nbsp; &nbsp;In the above figure we have plotted spread and MFCC 3 features. We can see that laugh is majorly contained in two areas only while cry is much more distributed. This gives us a very low value of correlation coefficient.<br>
+					&nbsp; &nbsp;In the fig(enter the section number.01) we have plotted spread and MFCC 3 features. We can see that laugh is majorly contained in two areas only while cry is much more distributed. This gives us a very low value of correlation coefficient.<br>
 					<br>
 					Considering the redundancy in feature extraction, a correlation matrix is designed which is shown below,
 					<img src="Pictures/comp.png" alt="This text displays when the image is umavailable" width="" height=""/>
@@ -233,7 +233,8 @@ Testing Accuracy: 85.95%<br><br>
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						Emotion detection of speech is done by feature extraction by processing the discrete time domain signal and using various digital techniques.The extracted features are used to train Ml classifier which gave a training efficiency 85%  and test efficiency of 81%. It has been observed that data collected from a single person for various emotion are efficient in training the classifier.  <br><br>
+						Features that are used are more of frequency domain such as Spectral flux ,Spectral Spread etc., are efficient to process the signal.Oxford Dataset is used which contains adult laugh and cry emotions.<br>
 						<!-- Stop edit here -->
 
 					</div>
@@ -244,6 +245,7 @@ Testing Accuracy: 85.95%<br><br>
 
 						<!-- Start edit here  -->
 						&nbsp; &nbsp;At present the present code is used to distinguish two emotions . This can be extended to multi emotion detection.
+						This can be extended for indian vocal Dataset and further used in activities. The trained data set would give better results for locals. 
 						<!-- Stop edit here -->
 
 					</div>
