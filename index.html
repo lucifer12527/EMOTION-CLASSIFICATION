@@ -1,17 +1,21 @@
 <html>
 	<head>
+<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+<title>Emotion Classification</title>
+<
+    
 		<style type="text/css">
-			body{font-family:"Bradley Hand ITC";}
+			body{font-family: 'libre serif'; }
 			p{display: inline-block;}
 			img{display: block;}
 			.container{width: 90%;position absolute;margin: auto;}
-			.title{position: relative;width: 90%;margin: auto;text-align: center;font-weight: bold;font-size: 18px;padding: 1%;}
-			.section{position: relative;width: 90%;margin: auto;padding: 2%;}
-			.subsection{position: relative; width: 98%;text-align: justify;padding: 10px;}
-			.heading{position: relative; width: 98%;text-align: left;font-size: 14px;font-weight: bold;}
-			.text{width: 95%;font-size: 12px;text-align: justify;padding: 10px 0px 10px 0px;}
-			.authors{position: relative;width: 80%;margin: auto;padding: 2%;font-style: italic;text-align: center;font-size: 12px;}
-			.image{width: 95%;font-size: 12px;text-align: left;}
+			.title{position: relative;width: 90%;margin: auto;text-align: center;font-weight: bold;font-size: 54px;padding: 1%;}
+			.section{position: relative;width:100%;margin: auto;padding: 2%;}
+			.subsection{position: relative; width: 95%;text-align: justify;padding: 10px;}
+			.heading{position: relative; width: 95%;text-align: left;font-size: 25px;font-weight: bold;}
+			.text{width: 95%;font-size: 20px;text-align: justify;padding: 10px 0px 10px 0px;}
+			.authors{position: relative;width: 80%;margin: auto;padding: 2%;font-style: italic;text-align: center;font-size: 20px;}
+			.image{width: 95%;font-size: 20px;text-align: left;}
 		</style>
 	</head>
 	<body>
@@ -35,11 +39,10 @@
 				<div class="heading">Abstract</div>
 				<div class="text">
 
-					<!-- Start edit here  -->
-					<p> Racous laughter, Heartfelt Distress ,Bewildered Silence, tremendrous roars. There are several emotional noises that we come across in our everyday life. Several Digital Signal Processing algorithms and frequency specific features are used to analyse these emotional sounds. Classifiers are trained using the analysed data and are used to test on various sounds to distinguish a particular emotional sound from others.
-					</p>
-					
-					<!-- Stop edit here -->
+				    Racous laughter, Heartfelt Distress ,Bewildered Silence, tremendrous roars. There are several emotional noises that we come across in our everyday life. Several Digital Signal Processing algorithms and frequency specific features are used to analyse these emotional sounds. The distinguishability of emotional features in audio signals were studied first followed by emotion classification performed on a custom dataset.Features extracted consist of Centroid, Spectral Spread, Entropy, Spectral Energy ,Zero Crossing, Pitch, Mel Frequency Cepstral Coefficients(MFCC) and others. Classifiers are trained using the features extracted from the analysed data and are used to test on various sounds to distinguish a particular emotional(laugh/cry) from other. It is observed that various emotional sounds collected from a particular speaker are give better results in classification of emotion than when collected from many speakers.<br><br>
+					 <I><B> Keywords:</B>  Emotion Analysis, Emotion Classification, Specral Spread, Entropy, Energy,Mel-Frequency Cepstral Coefficients.</I>
+
+
 
 				</div>
 			</div>
@@ -48,9 +51,7 @@
 				<div class="heading">1. Introduction</div>
 				<div class="text">
 
-					<!-- Start edit here  -->
-					Write a introduction to your project here.
-					<!-- Stop edit here -->
+					Recognizing emotion from speech has become one the active research themes in speech processing and in applications based on human-computer interaction. Sound signal is one of the main medium of communication and it can be processed to recognize the speaker emotion.The basic principle behind emotion recognition lies with analysing the acoustic difference that occurs when uttering the same thing under different emotional situations. Besides facial expressions or gestures, speech has proven as one of the most promising modalities for the automatic emotion recognition.
 
 				</div>
 
@@ -58,8 +59,8 @@
 					<div class="heading">1.1 Introduction to Problem</div>
 					<div class="text">
 
-						<!-- Start edit here  -->
-						Write something here.
+						<!-- Start edit here -->
+						The emotion recognition systems have the aim of recognizing emotions, in this case, from the speech. The problems introduced to these systems are: How the emotions are presented inside an audio signal? How well various DSP Algorithms be used to analyze and extract signal features from a given audio signal? How can a classifier use labelled samples to classify the emotion of a new one?  
 						<!-- Stop edit here -->
 
 					</div>
@@ -67,11 +68,12 @@
 
 				<div class="subsection">
 					<div class="heading">1.2 Figure</div>
-					<div class="image">
+					<div class="image" align=center>
 
 						<!-- Start edit here  -->
-						Block diagram of the system. All images must be put in a Pictures folder. An example image
-						<img src="Pictures/example.png" alt="This text displays when the image is umavailable" width="300px" height=""/>
+						
+						<img src="Pictures/example.png" alt="This text displays when the image is umavailable" width="600" height="" align=center/><br>
+						&nbsp; &nbsp;Speech Signal received is processed using Digital Signal Algorithms and various features are extracted which are used to train ML Algorithms.
 						<!-- Stop edit here -->
 
 					</div>
@@ -81,7 +83,12 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						Following Papers are helpful as reference :<br><br>
+						1)  <a href="<a href="https://drive.google.com/drive/folders/1urcsqqPoS0zK8RomBfuSayPPGyZNo7Ge">Speech Emotion classification using machine learning Algorithms</a><br><br>
+						2)  <a href="<a href="https://github.com/KrishnaPY/emotion-classification/blob/master/study%20material/1506.06832.pdf">Detection and analysis of emotion from speech signals</a><br><br>
+						3)  <a href="<a href="https://github.com/KrishnaPY/emotion-classification/blob/master/study%20material/496a8910ad30e1f0848969ae1402ec6c39e6.pdf">Techniques for feature extraction in speech recognition systems</a><br><br>
+						4)  <a href="<a href="https://github.com/KrishnaPY/emotion-classification/blob/master/study%20material/Bachelors_thesis_ANGEL_URBANO.pdf">Emotion recognition of speech using Naive Bayes classifier</a><br><br>
+						5)  <a href="<a href="https://github.com/KrishnaPY/emotion-classification/blob/master/study%20material/Speech%20Recognition%20using%20Digital%20Signal%20Processing.pdf">Speech recognition using Digital Processing Book</a><br><br>
 						<!-- Stop edit here -->
 
 					</div>
@@ -91,7 +98,7 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Describe your approach briefly here.
+						Audio Signals has various Spectral features which are greatly useful to analyse and infer about the speaker. Initially Dataset is processed by  removal of silence and noise using end point detection. Frames from the processed data are used to extract features such as Centroid, Spectral Spread, Entropy, Spectral energy and Mel Frequency Cepstral Coefficients.These extracted features are used to train svm classifiers in one Vs All fashion. In this project above mentioned features are used to distinguish laugh and cry . 
 						<!-- Stop edit here -->
 
 					</div>
@@ -101,7 +108,7 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						The following secction explains various features used to extract features out of the given dataset. Section 3 decribes the data set used and the various results obtained . Section 4, we summarises the result.
 						<!-- Stop edit here -->
 
 					</div>
@@ -113,7 +120,54 @@
 				<div class="text">
 
 					<!-- Start edit here  -->
-					Write something here.
+					Short Term Processing(STP) of Audio Signal is done to extract various features to train a classifier.An Audio signal(Speech) may be non-stationary in nature but when viewed in terms of short span 20-30 ms it might be stationary.<br><br>
+						Various midterm features extracted include:<br><br>
+						<div width: 90%;text-align: left;padding:10px >
+							<B><u>1) Zero Crossing Rate:</u></B><br> &nbsp; The zero-crossing rate is the rate of sign-changes along a signal, i.e., the rate at which the signal changes from positive to negative or back. It is a key feature to classify percussive sounds. Since high frequencies imply high zero crossing rates, and low frequencies imply low zero-crossing rates, there is a strong correlation between zero-crossing rate and energy distribution with frequency.
+							<img src="Pictures/zerocrossing.png" alt="This text displays when the image is umavailable" width="" height=""/><br>
+							<B><u>2) Pitch:</u></B><br> &nbsp; The pitch is the distinctive quality of a sound, dependent primarily on the frequency of the sound waves produced by its source, which can be computed by the pitch detection algorithm (PDA). High Pitch often refres to highe frequency oscillated signals and low pitch refers to low frequency oscillated ones.<br><br>
+							<B><u>3) Cepstrum:</u></B><br> &nbsp;A cepstrum is the result of taking the inverse Fourier transform (IFT) of the logarithm of the estimated spectrum of a signal.<img src="Pictures/cepstrum.png" alt="This text displays when the image is umavailable" width="" height=""/><br><br>
+							<B><u>4) Entropy:</u></B><br> &nbsp; Weiner Entropy measure of Spectral flatness or tonality coefficient is used to characterise audio spectrum. Spectral flatness provides a way to quantify how noise-like a sound is, as opposed to being tone-like.To extrac entropy feature speech is first pre-emphasized using a pre-emphasis filter in order to spectrally flatten the signal, and then the pre-emphasized speech is separated into short segments called frames. This will significantly enhance the ability to identify the emotional aspects of speech. In order to reduce the familiar edge effects, Hamming window is applied to each frame. <br>The FFT of X(i,n) is given by<img src="Pictures/entropy.png" alt="This text displays when the image is umavailable" width="" height=""/>Where X(i,n) is the nth frame and the ith frequency component. M denotes the number of points in the FFT and x(m,n) is the nth frame in the mth sample<br><br>
+							<B><u>5) Spectral Centroid:</u></B><br> &nbsp; The spectral centroid is used to characterise a spectrum. It indicates where the "center of mass" (around what frequency most of the spectrum is presnt). Perceptually, it has a robust connection with the impression of "brightness" of a sound.This feature is similar to formant frequencies and provides complementary information to cepstral features and also robust to noise. In short this would give us an idea to what frequency ange most of the power of the spectrum would lie in.&nbsp;<img src="Pictures/spectralcentroid.png" alt="This text displays when the image is umavailable" width="" height=""/>X(k) represents weighted frequency values or magnitude of bin k and F(k) represents central frequency of that bin.<br><br>
+							
+							<B><u>6) Spectral Energy Distribution:</u></B><br> &nbsp;Spectral energy distribution is a plot of brightness or flux density versus frequency or wavelength of light.<br><br>
+							
+							
+							<B><u>7) Spectral Spread:</u></B><br> &nbsp; Spectral Spread is a measure of absolute deviation from spectral centroid.<br><br>
+							<B><u>8) Spectral Skewness:</u></B><br> &nbsp;The skewness of a spectrum is the ratio of  third central moment of spectrum and  the 1.5 power of the second central moment.<br><br>
+							<B><u>9) Spectral Kurtosis:</u></B><br> &nbsp;x[n] be a real dicrete time sequence and X(m) is the n-point DFT. Spectral Kurtosis Kr - rth order cumulant is defined as <img src="Pictures/kurtosis.png" alt="This text displays when the image is umavailable" width="" height=""/><br><br>
+							<B><u>10) Mel Frequency Cepstral Coefficients:</u></B><br> &nbsp; The first step in any automatic speech recognition system is to extract features. Speech is the sound that is produced by human that are filtered by the shape of the vocal tract including tongue, teeth etc. This shape determine what sound comes out. The shape of the vocal tract manifests itself in the envelope of the short time power spectrum, and the job of MFCC is to accurately represent this envelope.<br>
+<br>
+<u>Implementation Steps</u><br>
+1.	Frame the signal into short frames.<br>
+2.	For each frame calculate the periodogram estimate of the power spectrum.<br>
+3.	Apply the mel filterbank to the power spectra, sum the energy in each filter.<br>
+4.	Take the logarithm of all filternbank energies.<br>
+5.	Take the DCT of the log filterbank energies.<br>
+6.	Keep DCT coefficient 2-13, discard the rest.<br>
+<br><u>Explanation</u> <br>
+ &nbsp;
+An audio signal is constantly changing, so to simply things we assume that on short time scales the audio signal doesn’t change much. We frame the signal into 20-40ms frames. If the frames is much shorter we don’t have enough samples to get a reliable spectral estimate, if it is longer the signal changes too much throughout the frame.<br>
+ &nbsp;
+After that we calculate the power spectrum of each frame. Periodogram estimate identify which frequencies are present in the frame. Periodogram spectral estimate still contains a lot of information not required for Speech recognition. For this reason, we take clumps of periodogram bins and sum them up to get an idea of how much energy exists in various frequency regions. This is performed by our Mel filterbank. Mel Scale tells us exactly how to space our filterbanks and how wide to make them.<br>
+ &nbsp;
+Once we have the filterbank energies, we take the logarithm of them. The final step is to compute the DCT of the log filterbank energies. There are two main reasons this is performed. Cos our filterbank are all overlappin, the filterbank energies are quite correlated with each other. The DCT de-correlates the energies which means diagonal co-variance matrices can be used to model the features in a classifier. But only 12 of the 26 DCT coefficients are kept.<br>
+<br>
+<u>Calculations</u>
+<br>
+1)	Formula for converting from frequency to Mel Scale :<br>
+&nbsp; &nbsp;M(f) = 1125 ln(1 + f/700)<br><br>
+
+2)	Discrete Fourier Transform of the frame  <br>
+  &nbsp; &nbsp;<img src="Pictures/dtft.png" alt="This text displays when the image is umavailable" width="" height=""/>
+ &nbsp; &nbsp;‘i’ denotes the frame number corresponding to the time-domain frame.<br><br>
+
+3)	Power Spectrum of frame <br>
+ <img src="Pictures/powerspectrum.png" alt="This text displays when the image is umavailable" width="" height=""/>
+This is called the periodogram estimate of the power spectrum.
+
+<br><br>
+						</div>
 					<!-- Stop edit here -->
 
 				</div>
@@ -122,13 +176,16 @@
 			<div class="section">
 				<div class="heading">3. Experiments &amp; Results</div>
 				<div class="subsection">
-					<div class="heading">3.1 Dataset Description</div>
+					<div class="heading">3.1 Oxford Vocal (OxVoc) Sound Database Description</div>
 					<div class="text">
 
 						<!-- Start edit here  -->
-						<p> Oxvoc Dataset of emotional sounds comprising of 19 cry sounds,30 Laugh sounds and 30 Neutral sounds is used to train classifier.
-						<!-- Stop edit here -->
-
+						The database consists of natural affective vocal sounds from human adults (male and female). This database contain 49 non-verbal sounds expressing a range of happy, sad and neutral emotional states. The major advantage of this database are the inclusion of vocalizations from naturalistic situations, which represent genuine expressions of emotion.  Out of 49 data-point in the database, 19 stimuli are of Adult cry and 30 of Adult laugh. The average frequency of the adult cry stimuli is 368.22 Hz, and that of adult laugh is 348.83 Hz
+						<br>
+						<I> Link to Dataset: <a href="https://drive.google.com/drive/folders/1urcsqqPoS0zK8RomBfuSayPPGyZNo7Ge">Oxford Vocal Sound Database</a>
+						</I><br>
+						<I> Link to Working code: <a href="https://github.com/KrishnaPY/emotion-classification">Emotion Detection working codes</a>
+						</I><br>
 					</div>
 				</div>
 				<div class="subsection">
@@ -136,8 +193,34 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						After a brief literature review, it was found that emotions were classified in 2 distinct ways, by either classifying them individually or by plotting them on a scale of arousal and excitation. We approached the task from the first approach due to low number of classes we had to classify while keeping the philosophy of the second approach in extracting features.
 						<!-- Stop edit here -->
+						<br><br>
+						<B>Features Comparison </B><br><br>
+						2D and 3D plot are shown for better understanding and visualization of features. 2D plots contains one features on x-axis and other on y-axis. The two emotion are plotted on the same graph to see the correlation between them.
+						<img src="Pictures/discussion.png" alt="This text displays when the image is umavailable" width="" height=""/>
+						
+					&nbsp; &nbsp;In the fig(enter the section number.01) we have plotted spread and MFCC 3 features. We can see that laugh is majorly contained in two areas only while cry is much more distributed. This gives us a very low value of correlation coefficient.<br>
+					<br>
+					Considering the redundancy in feature extraction, a correlation matrix is designed which is shown below,
+					<img src="Pictures/comp.png" alt="This text displays when the image is umavailable" width="" height=""/>
+					Highly correlated features are colored with dark red, while highly uncorrelated features are colored with black color. Green are the intermediate ones. We can see that features with itself gives a correlation of 1(diagonal left to right).<br><br>
+					<B>Classification</B>
+					<br><br>
+					The features that we extracted and after a brief analysis, found to have some differentiating factor were, spectral spread, spectral centroid, spectral energy, spectral entropy and the Mel Frequency Cepstral Coefficients. The first few coefficients of MFCC have said to give information on the timbre of the voice, which we correspond to the arousal aspect while features such as spectral spread, centroid and entropy provide information on the FFT spectrum itself.<br><br>
+					The two classes we had to classify are: Laugh and Cry from male and female natural sounds from whose sound clips 40ms frames were extracted.<br><br>
+					Two main classifiers were adopted to run the classification task, a Support Vector Machine with a Radial Basis Function kernel and then later on a Neural network ( Multi Layer Perceptron)<br><br>
+					Running on a training set of 5000 frames we have the following training results:<br><br>
+					<B>SVM with an RBF kernel</B><br>
+					5-fold Cross Validation Accuracy:<br>
+85%  85.3%  85.5%  85.6%  85.4%<br>
+Test Accuracy: 80.1%<br><br>
+<B>
+3-Layer Neural Network</B>
+<img src="Pictures/neural.png" alt="This text displays when the image is umavailable" width="" height=""/>
+Training Accuracy: 85.45%<br>
+Testing Accuracy: 85.95%<br><br>
+
 
 					</div>
 				</div>
@@ -160,7 +243,7 @@
 					<div class="text">
 
 						<!-- Start edit here  -->
-						Write something here.
+						&nbsp; &nbsp;At present the present code is used to distinguish two emotions . This can be extended to multi emotion detection.
 						<!-- Stop edit here -->
 
 					</div>
